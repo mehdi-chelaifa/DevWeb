@@ -1,0 +1,161 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* ------------- GENERAL ------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    margin: -60px auto 0;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #f5000c;
+    text-shadow: 0px 1px 1px #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* ------------- HEADER ------------- */
+
+.main-header {
+    height: 500px;
+    text-align: center;
+    background:
+        linear-gradient(to top, #fff, transparent 5%),
+        #f5000c url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Pink_Floyd%2C_1971.jpg/330px-Pink_Floyd%2C_1971.jpg) no-repeat center;
+    background-size: cover;
+}
+
+h1,
+h2 {
+    color: white;
+}
+
+h1 {
+    font-family: 'Arial Black', arial, sans-serif;
+    font-size: 5.5em;
+    letter-spacing: -0.625rem;
+}
+
+h2 {
+    margin-top: -70px;
+    font-weight: normal;
+}
+
+/* ------------- CONTENT ------------- */
+
+.haut {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.primaire {
+    font-size: 1.125rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px #888;
+}
+
+
+.secondaire {
+    overflow: auto;
+    width: 100%;
+}
+
+.primaire,
+.secondaire {
+    border-bottom: 4px solid ;
+    margin-bottom: 20px;
+    padding: 25px 30px;
+}
+
+.secondaire p {
+    padding-top: 20px;
+}
+
+.Dark, 
+.Wall {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+}
+
+#img1, 
+#img2 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+    padding: 5px 5px;
+}
+
+/* ------------- FOOTER ------------- */
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer img {
+    height: 30px;
+    width: 30px;
+}
+
+/* ------------- INTERACTIONS ------------- */
+
+a:hover {
+    color: black;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+
+@media (max-width: 920px) {
+    .Dark, 
+    .Wall {
+        float: none;
+        width: 80%;
+        margin: 5% 9%;
+    }
+    .secondaire {
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .main-header {
+        height: 400px;
+    }
+    .primaire {
+        font-size: 1rem;
+    }
+    .secondaire,
+    .footer {
+        font-size: 0.9rem;
+    }
+    .Dark,
+    .Wall {
+        width: 90%;
+        margin: 2.5% 4.5%;
+    }
+}
+
